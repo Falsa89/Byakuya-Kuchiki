@@ -18,154 +18,134 @@ $text = trim($text);
 $text = strtolower($text);
 header("Content-Type: application/json");
 $response = '';
-if(strpos($text, "/start") === 0 || $text=="hogyoku")
+if(strpos($text, "/start") === 0 || $text=="capitano")
 {
 	$response = "......!";
 }
-elseif (strpos($text, "paura") !== false)
+elseif (strpos($text, "debol") !== false)
 {
-	$response = "La paura è necessaria per raggiungere l'evoluzione. La paura che, nel proprio stato attuale, si possa probabilmente essere distrutti in qualsiasi momento. Grazie. È grazie alla tua presenza che sono finalmente riuscito a superare sia Shinigami che Hollow";
+	$response = "Non sei tu ad essere debole, sono io ad essere troppo forte per te!! ";
 }
-elseif (strpos($text, "illusione") !== false)
+elseif (strpos($text, "semplic") !== false)
 {
-	$response = "non sono più l'Aizen Sosuke che conoscevi? Sfortunatamente era tutta un'illusione... l'Aizen Sosuke che conoscevi non è mai esistito, fin dall'inizio..!";
+	$response = "Non ricordo di aver detto che ti avrei ucciso perché sono uno Shinigami. Il motivo per cui ti sto uccidendo è semplice. È perché hai puntato la tua lama sul mio unico orgoglio.";
 }
-elseif (strpos($text, "bugi") !== false)
+elseif (strpos($text, "raggiung") !== false)
 {
-	$response = "Questo mondo non è composto da verità o bugie.. Ma solo da fatti!! Tuttavia, coloro che vivono che vivono in questo mondo sbagliano nel credere che solo i fatti a loro favorevoli siano la verità..!! non conoscono altro modo per vivere...";
+	$response = "Lascia che ti parli della differenza tra te e me. È come la storia della scimmia che cerca di catturare la luna. Per quanto vicino pensi di essere alla luna, è ancora solo il riflesso della luna in mezzo al lago Non importa come ci si sforza di catturare quella 'luna', inevitabilmente affonderai sul fondo di quel lago senza alcun risultato. Non mi raggiungerai mai.";
 }
-elseif (strpos($text, "calm") !== false)
+elseif (strpos($text, "arrogante") !== false)
 {
-	$response = "che mi affrontiate con cautela... che mi affrontiate incautamente..... o anche che non mi affrontiate affatto... il risultato sarà sempre lo stesso... la vostra fine è inevitabile!";
+	$response = "Il fatto che ti consideri uguale a me, è essere arrogante in sé.";
 }
-if (strpos($text, "superior") !== false) 
+if (strpos($text, "colpit") !== false) 
 {
-	$response = "Immagino sia naturale per gli inferiori attaccarsi ai loro superiori. Se desiderano mantenere il loro livello, non hanno altra scelta che obbedire. Non c'è mai fine a questa catena... All'inizio si è pieni di queste utopie, ma poi per levare questo peso, si cerca di trovare qualcuno sempre più bravo di loro. E i forti ricercano altri ancora più forti, così da rifugiarsi in loro. Ecco come sono nati gli dei. Ma non fare errori, mi rispettano ancora tutti. Da questo momento in avanti, assisterete alla potenza del dio in cui ripongono fiducia. Diverrò quel dio in cui non possono non credere.";
+	$response = "Sii orgoglioso come qualcuno che, dopo essere stato colpito da questo potere, è ancora in grado di mantenere la forma di un corpo.";
 }
-elseif (strpos($text, "ciel") !== false)
+elseif (strpos($text, "protegger") !== false)
 {
-	$response = "Fin dal principio Nessuno ha mai dominato il regno dei cieli.. Non tu... non io e nemmeno gli Shinigami.... Ma l'insopportabile vuoto sul trono del Cielo terminerà e d'ora in poi siederò io su di esso!";
+	$response = "Ricorda che una spada impugnata da qualcuno che sta per morire ... non sarà mai in grado di proteggere nulla.";
 
 }
-elseif (strpos($text, "lament") !== false)
+elseif (strpos($text, "bankai") !== false)
 {
-	$response = "questi sono discorsi da perdenti... un vincente dovrebbe parlare di come il mondo dovrebbe essere!! non di come è!!";
+	$response = "Metti via la tua spada e vivrai ... a meno che tu non stia ancora sognando di sconfiggermi. Hai dimenticato o non ti è mai venuto in mente ... che ho anche un Bankai?";
 
 }
-elseif (strpos($text, "ammir") !== false)
+elseif (strpos($text, "scelta") !== false)
 {
-	$response = "L'ammirazione...è il sentimento più lontano dalla comprensione.";
+	$response = "Nessuna scelta, quindi. Prima di diventare intossicato dal tuo stesso potere, ti mostrerò un divario decisivo che non potresti superare in un millennio di lotte.";
 
 }
-elseif (strpos($text, "principi") !== false)
+elseif (strpos($text, "appoggio") !== false)
 {
-	$response = "I principi esistono soltanto per gli individui che non possono sopravvivere se non aggrappandosi ad essi. Proseguiamo ora, oltre il confine dei principi del cosmo.";
+	$response = "L'arroganza distrugge i punti di appoggio della vittoria.";
 
 }
-elseif (strpos($text, "bello") !== false)
+elseif (strpos($text, "offes") !== false)
 {
-	$response = "Pensiamo che un fiore cresciuto sul ciglio di un precipizio sia bello, perché i nostri piedi si fermano sul quel ciglio. Non riusciamo ad avanzare su quel cielo come quel fiore impavido.";
+	$response = "Non importa quanto sia forte una difesa, un'offesa più forte la distruggerà sempre.";
 
 }
-elseif (strpos($text, "imita") !== false)
+elseif (strpos($text, "toccar") !== false)
 {
-	$response = "Gli uomini sono tutti un'imitazione delle scimmie. Gli dei sono tutti un'imitazione degli uomini";
+	$response = "La tua lama non potrà mai toccarmi. Mai.!";
 }
-elseif (strpos($text, "terra") !== false)
+elseif (strpos($text, "controll") !== false)
 {
-	$response = "Prostratevi tutti impotenti, ed osservate la battaglia";
+	$response = " Controllo ... dici? Quando sei davanti a me ... quella parola non ha alcun significato. Bankai. Senbonzakura Kageyoshi.";
 }
-elseif (strpos($text, "odio") !== false)
+elseif (strpos($text, "emozion") !== false)
 {
-	$response = "Odiami... Detestami... Non vado da nessuna parte. Se lo desideri tanto, ti presenterò volentieri la mia spada";
+	$response = "Qualcosa di inutile come le emozioni, non ne ho mai avute tanto per cominciare";
 }
-elseif (strpos($text, "stort") !== false)
+elseif (strpos($text, "sparisc") !== false)
 {
-	$response = "Ti mostrerò quanto sono distorti i tuoi pensieri! ";
+	$response = "Sparisci. La mia spada non esiste per schiacciare gli insetti come te.";
 }
-elseif (strpos($text, "combatt") !== false)
+elseif (strpos($text, "regol") !== false)
 {
-	$response = "Un combattente senza odio, è come un'aquila senza ali. Dei compagni deboli non sono altro che... pesi che ti spezzano le gambe. ";
+	$response = "Il clan Kuchiki è una delle quattro case nobili. Dobbiamo stabilire lo standard per tutti gli Shinigami. Se non rispettiamo il codice ... chi lo sosterrà?";
 }
-elseif (strpos($text, "concett") !== false)
+elseif (strpos($text, "lento") !== false)
 {
-	$response = "Pensi che basti solo la forza per battermi? Sei troppo ottimista. O meglio, credo che i nostri concetti di forza siano troppo diversi. Lascia che te lo dimostri, questa è la vera forza ";
+	$response = "Sei lento, anche quando cadi!";
 }
-elseif (strpos($text, "desider") !== false)
+elseif (strpos($text, "lenta") !== false)
 {
-	$response = "Gli esseri viventi sono sorprendenti, eh. Sono fatti in modo da possedere a livello latente la capacità di realizzare i miseri desideri del loro minuscolo cuore.";
+	$response = "Sei lento, anche quando cadi!";
 }
-elseif (strpos($text, "trova") !== false)
+elseif (strpos($text, "sipario") !== false)
 {
-	$response = "Vi aspettate che dica 'Vi ho trovato?' Sbagliato. Ho solo smesso di far finta di cercarvi.";
+	$response = "Il sipario che cade alla fine, sarà abbattuto dalla lama della mia spada.";
 }
-elseif (strpos($text, "ragione") !== false)
+elseif (strpos($text, "sfrutt") !== false)
 {
-	$response = "La ragione, esiste solo per coloro che non possono vivere senza aggrapparsi ad essa.";
+	$response = "Mi stai dicendo di sfruttare un'apertura per uno come te? Non parlare fuori dalla tua portata, ragazzo!";
 }
-elseif (strpos($text, "speranza") !== false)
+elseif (strpos($text, "degno") !== false)
 {
-	$response = "Per favore... Speranza, fede, fiducia... Queste sono parole di un debole, non ho bisogno di parole del genere.";
+	$response = "Sei mille anni troppo giovane ... per pensare di essere degno di morire con il mio Bankai.";
 }
-elseif (strpos($text, "fede") !== false)
+elseif (strpos($text, "inchin") !== false)
 {
-	$response = "Per favore... Speranza, fede, fiducia... Queste sono parole di un debole, non ho bisogno di parole del genere.";
+	$response = "Non è possibile. Con la tua abilità, non puoi nemmeno far toccare a terra una delle mie ginocchia.";
 }
-elseif (strpos($text, "fiducia") !== false)
+elseif (strpos($text, "congrat") !== false)
 {
-	$response = "Per favore... Speranza, fede, fiducia... Queste sono parole di un debole, non ho bisogno di parole del genere.";
+	$response = "Ben fatto. Questa volta, la tua zanna mi ha decisamente toccato.";
 }
-elseif (strpos($text, "nascost") !== false)
+elseif (strpos($text, "onorat") !== false)
 {
-	$response = "Non temere quello che puoi vedere. In realtà ciò di cui devi aver paura, è ciò che è nascosto ai tuoi occhi.";
+	$response = "Mentre passi alla prossima vita, sentiti onorato di essere morto per mano del mio Bankai.";
 }
-elseif (strpos($text, "distan") !== false)
+elseif (strpos($text, "calpest") !== false)
 {
-	$response = "Perché insisti a mantenere una tale distanza da me? Se desideri infliggermi un colpo decisivo, dovresti farlo a distanza ravvicinata. O forse hai paura di avvicinarti troppo e lasciare una minima una parte del mio corpo fuori dalla tua visuale ? Se è così, sono deluso. Mantenere la distanza è un fattore chiave in una battaglia tra due combattenti di uguale forza. Tra te e me, le distanze non hanno alcun significato. Osserva. Sono perfettamente in grado di raggiungere il tuo cuore in qualsiasi momento. ";
+	$response = "Vedo che ti piace calpestare il nostro orgoglio. Molto bene, allora. Inciderò nel tuo corpo ... La punizione per aver ferito il nostro orgoglio! ";
 }
-elseif (strpos($text, "ingann") !== false)
+elseif (strpos($text, "spezza") !== false)
 {
-	$response = "Non avevo intenzione di ingannare nessuno. È solo che nessuno di voi poteva capire ... Il mio vero io";
+	$response = "la mia spada è stata spezzata dalla tua libertà di spirito.";
 }
-elseif (strpos($text, "parole") !== false)
+elseif (strpos($text, "occasione") !== false)
 {
-	$response = "Non usare parole così forti. Ti farà solo sembrare debole";
+	$response = " I miracoli accadono una volta sola. Non ti sarà concessa un'altra occasione, ragazzino.";
 }
-elseif (strpos($text, "spazza") !== false)
+elseif (strpos($text, "piang") !== false)
 {
-	$response = "Ai miei occhi, non c'è differenza tra spazzare via un granello di polvere o due";
+	$response = "Non dobbiamo piangere, il pianto è la resa del corpo nei confronti del cuore, nient'altro che la prova che non siamo in grado di gestire ciò che chiamiamo cuore.";
 }
-elseif (strpos($text, "piano") !== false)
+elseif (strpos($text, "disturb") !== false)
 {
-	$response = "tutte le battaglie che hai combattuto, erano tutte parte del mio piano.";
+	$response = "Indipendentemente da chi o cosa siano, chiunque disturba la Soul Society verrà abbattuto. ";
 }
-elseif (strpos($text, "fianco") !== false)
+elseif (strpos($text, "insicur") !== false)
 {
-	$response = "Indipendentemente da ciò che può accadere ... Fintanto che camminerai al mio fianco ... Non ci sarà nemico in grado di stare davanti a noi.";
+	$response = "La paura non nasce mai dal nulla. Nasce dalle piccole insicurezze che persistono nei nostri cuori.";
 }
-elseif (strpos($text, "girate") !== false)
+elseif (strpos($text, "byakuya") !== false)
 {
-	$response = "Non cercare la bellezza in battaglia. Non cercare la bellezza nella morte. Non considerare la tua stessa vita. Se desideri proteggere ciò che deve essere protetto, allora colpisci mentre le spalle del tuo avversario sono girate.";
-}
-elseif (strpos($text, "posso") !== false)
-{
-	$response = "No grazie, perché sarebbe noioso";
-}
-elseif (strpos($text, "ridi") !== false)
-{
-	$response = "Una ragazza come te dovrebbe sorridere più spesso. I cieli nuvolosi cancellano il sole, e questo abbatte sempre gli spiriti delle persone. Quindi perché non lasciare che il sole splenda ... Per un po 'di più?";
-}
-elseif (strpos($text, "riso") !== false)
-{
-	$response = "Una ragazza come te dovrebbe sorridere più spesso. I cieli nuvolosi cancellano il sole, e questo abbatte sempre gli spiriti delle persone. Quindi perché non lasciare che il sole splenda ... Per un po 'di più?";
-}
-elseif (strpos($text, "scopo") !== false)
-{
-	$response = "Non si tratta di benefici. Il mio unico scopo è sempre stato quello di schiacciare tutti coloro che cercano di controllarmi.";
-}
-elseif (strpos($text, "aizen") !== false)
-{
-	$response = "ex capitano della 5a divisione; un intellettuale educato e pacato. Raramente mostra segni di allarme o angoscia, e spesso ha pianificato intere situazioni con largo anticipo. ";
+	$response = "28 ° capo del clan Kuchiki , uno dei quattro grandi clan nobili della Soul Society. È anche il capitano della 6a divisione . agisce in modo aristocratico. Sembra sempre sereno e apatico nei confronti degli altri, anche se in realtà è profondamente in conflitto. È particolarmente calmo, anche in battaglia. In genere agisce indifferentemente, al limite dell'arroganza, per la maggior parte delle situazioni che deve affrontare e raramente vede il suo avversario come degno del suo tempo.";
 }
 
 
