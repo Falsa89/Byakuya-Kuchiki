@@ -22,11 +22,11 @@ if(strpos($text, "/start") === 0 || $text=="capitano")
 {
 	$response = "......!";
 }
-elseif (strpos($text, "debol") !== false)
+elseif (strpos($text, "debole ") !== false)
 {
 	$response = "Non sei tu ad essere debole, sono io ad essere troppo forte per te!! ";
 }
-elseif (strpos($text, "semplic") !== false)
+elseif (strpos($text, "semplice ") !== false)
 {
 	$response = "Non ricordo di aver detto che ti avrei ucciso perché sono uno Shinigami. Il motivo per cui ti sto uccidendo è semplice. È perché hai puntato la tua lama sul mio unico orgoglio.";
 }
@@ -71,9 +71,9 @@ elseif (strpos($text, "toccar") !== false)
 {
 	$response = "La tua lama non potrà mai toccarmi. Mai.!";
 }
-elseif (strpos($text, "controll") !== false)
+elseif (strpos($text, "controllo") !== false)
 {
-	$response = " Controllo ... dici? Quando sei davanti a me ... quella parola non ha alcun significato. Bankai. Senbonzakura Kageyoshi.";
+	$response = " Controllo ... dici? Quando sei davanti a me ... quella parola non ha alcun significato. Ban-Kai. Senbonzakura Kageyoshi.";
 }
 elseif (strpos($text, "emozion") !== false)
 {
@@ -83,15 +83,11 @@ elseif (strpos($text, "sparisc") !== false)
 {
 	$response = "Sparisci. La mia spada non esiste per schiacciare gli insetti come te.";
 }
-elseif (strpos($text, "regol") !== false)
+elseif (strpos($text, "regole") !== false)
 {
 	$response = "Il clan Kuchiki è una delle quattro case nobili. Dobbiamo stabilire lo standard per tutti gli Shinigami. Se non rispettiamo il codice ... chi lo sosterrà?";
 }
 elseif (strpos($text, "lento") !== false)
-{
-	$response = "Sei lento, anche quando cadi!";
-}
-elseif (strpos($text, "lenta") !== false)
 {
 	$response = "Sei lento, anche quando cadi!";
 }
@@ -123,7 +119,7 @@ elseif (strpos($text, "calpest") !== false)
 {
 	$response = "Vedo che ti piace calpestare il nostro orgoglio. Molto bene, allora. Inciderò nel tuo corpo ... La punizione per aver ferito il nostro orgoglio! ";
 }
-elseif (strpos($text, "spezza") !== false)
+elseif (strpos($text, "spezzata") !== false)
 {
 	$response = "la mia spada è stata spezzata dalla tua libertà di spirito.";
 }
